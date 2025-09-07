@@ -77,14 +77,15 @@ button {
 }
 
 .navbar-container {
-  max-width:1200px;
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  height: auto;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically centers logo & menu items */
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    height: 100%;
 }
+
 
 .menu-items {
   order: 2;
@@ -109,9 +110,20 @@ button {
 }
 
 .logo {
-  order: 1;
-  font-size: 3rem;
+    order: 1;
+    font-size: 3rem;
+    display: flex;              /* Add this */
+    flex-direction: column;     /* Stack h2 and h4 vertically */
+    justify-content: center;    /* Vertically center inside navbar */
+    height: 100%;               /* Take full navbar height */
+    padding-left: 1rem;         /* Optional: space from left edge */
 }
+
+.logo h2, .logo h4 {
+    margin: 0;                  /* Remove default margin */
+    line-height: 1.2;           /* Tighter spacing */
+}
+
 
 .container-fluid {
   position: relative;

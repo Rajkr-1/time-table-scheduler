@@ -1,2 +1,6 @@
+
 __pycache__/
-secret_key.txt
+*.pyc
+db.sqlite3
+*.sqlite3
+*.log

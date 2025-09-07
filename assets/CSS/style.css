@@ -47,8 +47,21 @@ button {
   border-style: none;
 }
 
+.logo {
+  order: 1;
+  font-size: 1rem; /* reduced from 3rem */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-left: 1rem;
+}
+
 .logo h2 {
+  font-size: 1rem; /* reduced from 3rem */
   color: var(--green3);
+  margin: 0;
+  line-height: 1.2;
 }
 
 .logo h2 a {
@@ -57,7 +70,10 @@ button {
 }
 
 .logo h4 {
+  font-size: 1rem; /* reduced from default */
   color: var(--light-grey);
+  margin: 0;
+  line-height: 1.2;
 }
 
 .navbar input[type="checkbox"],
@@ -106,11 +122,6 @@ button {
   font-size: 1.3rem;
   font-weight: 500;
   transition: color 0.3s ease-in-out;
-}
-
-.logo {
-  order: 1;
-  font-size: 3rem;
 }
 
 .container-fluid {
@@ -230,12 +241,26 @@ button {
     font-size: 1.3rem;
     font-weight: 500;
   }
+  /* Mobile logo size adjustments */
   .logo {
     position: absolute;
     top: 0.5rem;
     right: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.6rem;  /* reduced */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
   }
+
+  .logo h2 {
+    font-size: 1.6rem; /* reduced */
+  }
+
+  .logo h4 {
+    font-size: 0.9rem; /* reduced */
+  }
+
   .navbar-container input[type="checkbox"]:checked~.menu-items {
     transform: translateX(0);
   }
@@ -300,17 +325,17 @@ button {
 }
 
 .card .crdbtn .btn {
-	color: var(--white);
-	background-color: var(--green5);
-	font-size: 1.6rem;
+  color: var(--white);
+  background-color: var(--green5);
+  font-size: 1.6rem;
   font-weight: bold;
-	line-height: 2.6rem;
-	border-radius: 0.8rem;
-	padding: 1.6rem 3.6rem;
-	text-align: center;
-	letter-spacing: 0.9px;
-	text-decoration: none;
-	box-shadow: 2px 2px 6px var(--box-shadow);
+  line-height: 2.6rem;
+  border-radius: 0.8rem;
+  padding: 1.6rem 3.6rem;
+  text-align: center;
+  letter-spacing: 0.9px;
+  text-decoration: none;
+  box-shadow: 2px 2px 6px var(--box-shadow);
 }
 
 /* Ripple effect */
@@ -334,7 +359,6 @@ button {
   color: var(--white);
   background-color: var(--green6);
 }
-
 
 .loaderClass {
   display: none;
@@ -366,8 +390,6 @@ button {
   0% {transform: rotate(0deg); }
   100% {transform: rotate(360deg); }
 }
-
-
 
 fieldset {
   padding: 50px;
@@ -456,7 +478,6 @@ fieldset {
   }
 }
 
-
 /* Button style */
 .submit {
   border: none;
@@ -494,7 +515,6 @@ fieldset {
   color: var(--white);
   background-color: var(--green6);
 }
-
 
 .secHead {
   margin-top: 2rem;
